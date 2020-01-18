@@ -16,3 +16,21 @@
 .one {
   left: 50%;
 }
+
+.container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.container2 {
+  left: 25%;
+  top: 25%;
+  position: absolute;
+}
+
+.block {
+  background-color: red;
+  height: 4rem;
+  width: 4rem;
+}

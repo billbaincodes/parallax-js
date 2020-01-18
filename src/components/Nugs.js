@@ -14,19 +14,36 @@ class Parallax3 extends Component {
     //Parllax code
     var scene = document.getElementById("scene");
     var parallaxInstance = new Parallax(scene, {
-      limitX: 0
+    });
+    var scene2 = document.getElementById("scene2");
+    var parallaxInstance = new Parallax(scene2, {
+      invertY: 0,
+      invertX: 0,
     });
   }
 
   render() {
     return (
+      <div>
+      <div class='container'>
         <div id="scene">
-          <div className='layer1' data-depth="0.8">
-            <img src={nug1} className="nug one" alt="node" />
-          </div>
+          <img src={nug3} alt='nug' data-depth='4'></img>
         </div>
+      </div>
+      <div class='container2'>
+        <div id="scene2">
+          <img src={nug3} alt='nug' data-depth='2'></img>
+        </div>
+      </div>
+      </div>
     );
   }
 }
 
 export default Parallax3;
+
+{/* <div id="scene">
+<div className='layer1' data-depth="0.8">
+  <img src={nug1} className="nug one" alt="node" />
+</div>
+</div> */}
