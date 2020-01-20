@@ -5,8 +5,8 @@
 }
 
 .nug {
-  height: 9rem;
-  width: 9rem;
+  height: 14rem;
+  width: 14rem;
 }
 
 .layer1 {
@@ -21,6 +21,7 @@
   left: 50%;
   top: 50%;
   position: absolute;
+  animation: orbit 4s linear infinite
 }
 
 .container2 {
@@ -29,8 +30,7 @@
   position: absolute;
 }
 
-.block {
-  background-color: red;
-  height: 4rem;
-  width: 4rem;
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }

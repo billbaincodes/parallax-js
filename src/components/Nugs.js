@@ -27,12 +27,12 @@ class Parallax3 extends Component {
       <div>
       <div class='container'>
         <div id="scene">
-          <img src={nug3} alt='nug' data-depth='4'></img>
+          <img src={nug3} alt='nug' class='nug' data-depth='1'></img>
         </div>
       </div>
       <div class='container2'>
         <div id="scene2">
-          <img src={nug3} alt='nug' data-depth='2'></img>
+          <img src={nug3} alt='nug' class='nug' data-depth='2'></img>
         </div>
       </div>
       </div>
