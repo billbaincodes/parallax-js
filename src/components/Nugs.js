@@ -20,21 +20,41 @@ class Parallax3 extends Component {
       invertY: 0,
       invertX: 0,
     });
+    var scene3 = document.getElementById("scene2");
+    var parallaxInstance = new Parallax(scene2, {
+      invertY: 0,
+      invertX: 0,
+    });
+    var scene4 = document.getElementById("scene2");
+    var parallaxInstance = new Parallax(scene2, {
+      invertY: 0,
+      invertX: 0,
+    });
   }
 
   render() {
     return (
-      <div>
-      <div class='container'>
-        <div id="scene">
-          <img src={nug3} alt='nug' class='nug' data-depth='1'></img>
+      <div class='wheel'>
+        <div class='container'>
+          <div id="scene">
+            <img src={nug3} alt='nug' class='nug' data-depth='1'></img>
+          </div>
         </div>
-      </div>
-      <div class='container2'>
-        <div id="scene2">
-          <img src={nug3} alt='nug' class='nug' data-depth='2'></img>
+        <div class='container2'>
+          <div id="scene2">
+            <img src={nug1} alt='nug' class='nug' data-depth='2'></img>
+          </div>
         </div>
-      </div>
+        <div class='container3'>
+          <div id="scene3">
+            <img src={nug2} alt='nug' class='nug' data-depth='2'></img>
+          </div>
+        </div>
+        <div class='container4'>
+          <div id="scene4">
+            <img src={nug4} alt='nug' class='nug' data-depth='2'></img>
+          </div>
+        </div>
       </div>
     );
   }

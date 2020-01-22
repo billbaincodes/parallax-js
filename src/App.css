@@ -19,18 +19,42 @@
 
 .container {
   left: 50%;
-  top: 50%;
+  top: 25%;
   position: absolute;
-  animation: orbit 4s linear infinite
+  /* animation: orbit 4s linear infinite */
 }
 
 .container2 {
-  left: 25%;
-  top: 25%;
+  left: 50%;
+  top: 75%;
   position: absolute;
+  /* animation: orbit 4s linear infinite */
+}
+
+.container3 {
+  left: 25%;
+  top: 50%;
+  position: absolute;
+  /* animation: orbit 4s linear infinite */
+}
+
+.container4 {
+  left: 75%;
+  top: 50%;
+  position: absolute;
+  /* animation: orbit 4s linear infinite */
+}
+
+.wheel {
+  animation: rotate 40s linear infinite
 }
 
 @keyframes orbit {
-  from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  from { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(-360deg)}
 }
